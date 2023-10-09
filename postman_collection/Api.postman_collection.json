@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "faf30bdf-dc6f-427c-8ad7-4bd10b90aa63",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25574918"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register?name=test&email=test@gmail.com&password=12345&c_password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						},
+						{
+							"key": "c_password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?email=test@gmail.com&password=12345",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWUyNGRiOTIwYTFlMmJkODk2ZTA4ZTUxNmI1ZjQ3M2JhOGM2Y2IyZDg1ODk5YjQ4ZmFiMDk3ZmY4MTFiNjc5NmY4YTgwZGE5ZDQ0OTQwYjkiLCJpYXQiOjE2OTY4NDg3MTYuMzcwMzUzLCJuYmYiOjE2OTY4NDg3MTYuMzcwMzY0LCJleHAiOjE3Mjg0NzExMTYuMzI4ODA2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.c0T-ewXy3rz9LMPKOVNbL2pvaO_iEbbcK9IWVIxDvzFavf73g8MKvMEhwHgs87Jb2-S_iUl0qoKV0nhFR5cbdWW5b1XS1MCZ1mLmR7igxF_FSI1rxwheVxMnQ--4LkMZwqBuuLJFhb3fIiDixhC7Y0L0x5d9hXofBjddbotoLdTCBcRMY7EraPQ3I46kyezVnGO7gLZj59QJbnIUbbjHN7ig0fVyDGDC2ap52KAjq1y2PHDzv8PmwekMCj8Xrz4gUNJ6Z4-wqwgq2e2N-z9pxMGExoMHhnztjqR9jNc3L87asXkpJek7hq5uUimf0rIpILR2fXMSEN1k0qFjm7l8sURVIyAmDSAYL40ZIgYQTnBOskuoTU6_NYWygA5eg4NbbkF5BxG5tZeuamC4dK3XHaqm2BK5qyCvyyEcru0s-SUaKtTGrKIuYw7SU1jsX2RX2F97ks2GuYJgbMpYVFC7XPI9llcFLmfy8K_qEn5Mvldf9hdDReztOSdNJRIFr7zpXXigjjqZ0s8NRVjMdKY5nxN3fCtodVWegAVs8m8aaRvGEgag7oKB7iBtx_FfhVqxLeWTj7wKvCQwi_V6UdVXw4BYHhcoOfzv2NkUuZ-fiRKXIUgHKi8Ae-h5MZwqWxtn3Q14RDD786nohANnMRNYjcDJZqqK3v3SM1DDVDf9LMM\"",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/details",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "This is the content of the post",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/posts?user_id=1&content=test api&image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "content",
+							"value": "test api"
+						},
+						{
+							"key": "image",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "curl",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "user_id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "post_id",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "content",
+						"value": "test api",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Likes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/likes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"likes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
